@@ -14,10 +14,11 @@ body {
 
 #navbar {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: sticky;
+    position: fixed;
     height: 70px;
     background-color: #ff652f;
     font-size: 1.3rem;
+    width: 100%;
 }
 
 #navbar ul {
@@ -53,7 +54,7 @@ body {
 
 #welcome-section h1 {
     font-size: 4rem;
-    padding: 17% 0 0;
+    padding: calc(70px + 17%) 0 0;
 }
 
 #welcome-section p {
@@ -69,7 +70,7 @@ body {
     /* Welcome Section Styles */
 
     #welcome-section h1 {
-        padding: 25% 0 0;
+        padding: calc(70px + 25%) 0 0;
     }
 
     #welcome-section p {
@@ -81,7 +82,7 @@ body {
     /* Welcome Section Styles */
 
     #welcome-section h1 {
-        padding: 20% 0 0;
+        padding: calc(70px + 20%) 0 0;
     }
 
     #welcome-section p {
@@ -104,7 +105,7 @@ body {
 
     #welcome-section h1 {
         font-size: 3rem;
-        padding: 25% 0 0;
+        padding: calc(70px +25%) 0 0;
     }
 
     #welcome-section p {
