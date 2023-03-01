@@ -1,9 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #272727;
+    color: #fff;
+}
+
 #welcome-section {
     height: 100vh;
 }
 
 #navbar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: sticky;
+    height: 70px;
+    background-color: #ff652f;
+    font-size: 1.3rem;
+}
+
+#navbar ul {
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    margin-right: 2%;
+}
+
+#navbar ul li {
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    padding: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color ease 0.5s;
+}
+
+#navbar ul li a:hover {
+    background-color: #272727;
 }
 
 @media screen and (max-width: 375px) {
