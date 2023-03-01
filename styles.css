@@ -53,7 +53,7 @@ body {
 
 #welcome-section h1 {
     font-size: 4rem;
-    padding: 15% 0 0;
+    padding: 17% 0 0;
 }
 
 #welcome-section p {
@@ -61,8 +61,32 @@ body {
     font-weight: 100;
     font-style: italic;
     font-size: 2rem;
-    padding: 0 0 15%;
+    padding: 0 0 17%;
     color: #ff652f;
+}
+
+@media screen and (max-width: 912px) {
+    /* Welcome Section Styles */
+
+    #welcome-section h1 {
+        padding: 25% 0 0;
+    }
+
+    #welcome-section p {
+        padding: 0 0 25%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    /* Welcome Section Styles */
+
+    #welcome-section h1 {
+        padding: 20% 0 0;
+    }
+
+    #welcome-section p {
+        padding: 0 0 20%;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -74,5 +98,16 @@ body {
 
     #navbar ul li a {
         padding: 1.5rem 1rem;
+    }
+
+    /* Welcome Section Styles */
+
+    #welcome-section h1 {
+        font-size: 3rem;
+        padding: 25% 0 0;
+    }
+
+    #welcome-section p {
+        padding: 0 0 25%;
     }
 }
