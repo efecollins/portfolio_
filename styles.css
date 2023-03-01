@@ -1,0 +1,11 @@
+#welcome-section {
+    height: 100vh;
+}
+
+#navbar {
+    position: sticky;
+}
+
+@media screen and (max-width: 375px) {
+
+}
