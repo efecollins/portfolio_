@@ -167,6 +167,55 @@ body {
     margin-left: .5rem;
 }
 
+/* Contact Section */
+#contact {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10rem 11rem;
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.15rem;
+    margin-bottom: 5rem;
+}
+
+#contact div {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#contact div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: transform ease 0.5s;
+}
+
+#contact div a:hover {
+    transform: translateY(8px);
+}
+
+#contact div a svg {
+    fill: #fff;
+    width: 13%;
+}
+
+@media screen and (max-width: 1280px) {
+    /* Contact Section Styles */
+
+    #contact div a {
+        font-size: 1.4rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     /* Projects Section Styles */
 
@@ -188,6 +237,16 @@ body {
     #welcome-section h1 {
         padding: calc(70px + 25%) 0 0;
     }
+
+    /* Contact Section Styles */
+
+    #contact h3 {
+        font-size: 3rem;
+    }
+
+    #contact div a {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 912px) {
@@ -196,6 +255,28 @@ body {
     #welcome-section h1 {
         padding: calc(70px + 55%) 0 0;
     }
+
+    /* Contact Section Styles */
+
+    #contact {
+        padding: 10rem 9rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    /* Contact Section Styles */
+    #contact {
+        padding: 10rem 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Contact Section Styles */
+    #contact {
+        padding: 10rem 4rem;
+    }
 }
 
 @media screen and (max-width: 712px) {
@@ -203,6 +284,20 @@ body {
 
     #projects div div a figure figcaption {
         font-size: 1rem;
+    }
+
+    /* Contact Section Styles */
+    #contact {
+        padding: 10rem 2rem;
+    }
+}
+
+@media screen and (max-width: 601px) {
+
+    /* Contact Section Styles */
+
+    #contact div a {
+        font-size: 0.85rem;
     }
 }
 
@@ -221,6 +316,34 @@ body {
 
     #projects div div a figure figcaption {
         font-size: 0.8rem;
+    }
+
+    /* Contact Section Styles */
+
+    #contact {
+        padding: 7rem 2rem;
+    }
+
+    #contact h3 {
+        font-size: 2rem;
+    }
+
+    #contact div {
+        display: grid;
+        justify-content: space-around;
+        align-items: stretch;
+        grid-template-rows: 30% 30% 30%;
+        grid-template-columns: 40% 40%;
+        align-content: space-between;
+    }
+
+    #contact div a {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #contact div a svg {
+        width: 10%;
     }
 }
 
@@ -302,5 +425,11 @@ body {
 
     #welcome-section p {
         font-size: 1.5rem;
+    }
+
+    /* Contact Section Styles */
+
+    #contact div a {
+        font-size: 0.62rem;
     }
 }
