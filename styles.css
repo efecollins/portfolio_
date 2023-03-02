@@ -10,6 +10,24 @@ body {
     color: #fff;
 }
 
+/* Scrollbar styles */
+
+::-webkit-scrollbar {
+    width: 12.5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ff652f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #272727;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0099cc;
+}
+
 /* NavBar Styles */
 
 #navbar {
@@ -19,6 +37,7 @@ body {
     background-color: #ff652f;
     font-size: 1.3rem;
     width: 100%;
+    z-index: 19;
 }
 
 #navbar ul {
@@ -42,7 +61,7 @@ body {
 }
 
 #navbar ul li a:hover {
-    background-color: #272727;
+    background-color: #0099cc;
 }
 
 /* Welcome Section Styles */
@@ -64,6 +83,88 @@ body {
     font-size: 2rem;
     padding: 0 0 17%;
     color: #ff652f;
+}
+
+/* Projects Section Styles */
+
+#projects {
+    background-color: #0099cc;
+    padding: 5% 0 calc(5% + 3rem);
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2.5px;
+    margin-bottom: 2rem;
+}
+
+#projects>div {
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+#projects>div>div {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+#projects div div a {
+    margin: 1rem;
+    color: #fff;
+}
+
+#projects div div a figure {
+    position: relative;
+}
+
+#projects div div a figure img {
+    width: 100%;
+}
+
+#projects div div a figure figcaption {
+    position: absolute;
+    background-color: #272727;
+    padding: 1rem;
+    top: 98%;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.38rem;
+}
+
+#projects div div a figure figcaption span {
+    color: #ff652f;
+    opacity: 0;
+    transition: opacity ease 0.5s;
+}
+
+#projects div div a:hover figure figcaption span {
+    opacity: 1;
+}
+
+#projects .all-projects {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #272727;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+#projects .all-projects:hover {
+    background-color: #ff652f;
+}
+
+#projects .all-projects span {
+    transition: margin-left ease 0.5s;
+}
+
+#projects .all-projects:hover span {
+    margin-left: .5rem;
 }
 
 @media screen and (max-width: 912px) {
